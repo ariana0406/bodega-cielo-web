@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Gestión de Bodega - Proyecto Final</title>
+    <title>Bodega «Cielo» - Proyecto Final</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <nav class="nav" id="navbar">
         <div class="container">
             <div class="nav-container">
-                <div class="nav-logo">Sistema de Bodega</div>
+                <div class="nav-logo">Bodega «Cielo»</div>
                 <div class="nav-right">
                     <ul class="nav-links">
                         <li><a href="#inicio">Inicio</a></li>
@@ -68,10 +68,7 @@
             <h2 class="section-title">Introducción del Proyecto</h2>
             <div class="intro-content">
                 <p class="intro-text">
-                    Este proyecto representa la culminación de nuestro aprendizaje en el curso de Teoría y Diseño de Bases de Datos. 
-                    Hemos desarrollado un sistema integral de gestión para bodegas que permite administrar eficientemente el inventario, 
-                    realizar seguimiento de productos, gestionar proveedores y generar reportes detallados. El sistema está diseñado 
-                    con una arquitectura robusta que garantiza la integridad de los datos y optimiza las operaciones de almacenamiento.
+                Este proyecto fue desarrollado como parte del curso de Teoría y Diseño de Bases de Datos. Su objetivo principal es diseñar e implementar un sistema de gestión para una bodega utilizando bases de datos bien estructuradas. El trabajo abarcó el modelado entidad-relación, normalización de datos, implementación en PostgreSQL, creación de un diagrama UML y el desarrollo de una pequeña aplicación móvil con Flutter y Supabase que permite registrar entradas y salidas de productos.
                 </p>
             </div>
         </div>
@@ -84,20 +81,11 @@
             <div class="description-grid">
                 <div class="description-text">
                     <p>
-                        Nuestra solución de gestión de bodega está diseñada para optimizar las operaciones de almacenamiento 
-                        y distribución. El sistema permite el control completo del inventario en tiempo real, desde el ingreso 
-                        de mercancías hasta su distribución final.
-                    </p>
-                    <br>
-                    <p>
-                        La bodega maneja múltiples categorías de productos, gestiona ubicaciones específicas dentro del almacén, 
-                        controla niveles de stock mínimos y máximos, y genera alertas automáticas cuando es necesario reabastecer. 
-                        Además, incluye funcionalidades para el manejo de lotes, fechas de vencimiento y trazabilidad completa 
-                        de los productos.
+                        La bodega «Cielo» es un negocio dedicado al almacenamiento y comercialización de productos. Requiere un sistema que facilite el control del stock, el seguimiento de proveedores, productos y transacciones. Con este proyecto, se busca optimizar la organización de la información y mejorar la eficiencia de las operaciones diarias mediante herramientas tecnológicas modernas.
                     </p>
                 </div>
                 <div class="description-image">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=320&fit=crop&crop=center" alt="Imagen de la bodega" class="description-main-image">
+                    <img src="img/bodega.png" alt="Imagen de la bodega" class="description-main-image">
                 </div>
             </div>
         </div>
@@ -113,73 +101,67 @@
             <div class="screenshots-grid">
                 <div class="screenshot-card">
                     <div class="screenshot-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=220&fit=crop&crop=center" alt="Dashboard Principal" class="screenshot-main-image">
+                        <img src="img/1.png" alt="Dashboard Principal" class="screenshot-main-image">
                     </div>
                     <div class="screenshot-info">
-                        <h3 class="screenshot-title">Dashboard Principal</h3>
+                        <h3 class="screenshot-title">Pantalla de Inicio de Sesión</h3>
                         <p class="screenshot-description">
-                            Panel de control con métricas en tiempo real, gráficos de inventario y accesos rápidos 
-                            a las funciones más utilizadas del sistema.
+                            Acceso seguro mediante autenticación con Supabase. Permite a los usuarios ingresar con su correo y contraseña para gestionar el inventario según sus permisos.
                         </p>
                     </div>
                 </div>
                 <div class="screenshot-card">
                     <div class="screenshot-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=220&fit=crop&crop=center" alt="Gestión de Inventario" class="screenshot-main-image">
+                        <img src="img/2.png" alt="Gestión de Inventario" class="screenshot-main-image">
                     </div>
                     <div class="screenshot-info">
-                        <h3 class="screenshot-title">Gestión de Inventario</h3>
+                        <h3 class="screenshot-title">Dashboard de Productos</h3>
                         <p class="screenshot-description">
-                            Lista completa de productos con filtros avanzados, búsqueda y opciones para 
-                            agregar, editar o eliminar elementos del inventario.
+                            Vista principal de los productos almacenados en la bodega. Muestra información clave como nombre, cantidad disponible, y categoría. Permite acceder rápidamente a opciones de edición o eliminación.
                         </p>
                     </div>
                 </div>
                 <div class="screenshot-card">
                     <div class="screenshot-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=220&fit=crop&crop=center" alt="Formulario de Productos" class="screenshot-main-image">
+                        <img src="img/3.png" alt="Formulario de Productos" class="screenshot-main-image">
                     </div>
                     <div class="screenshot-info">
-                        <h3 class="screenshot-title">Formulario de Productos</h3>
+                        <h3 class="screenshot-title">Registro de Movimiento (Entrada/Salida)</h3>
                         <p class="screenshot-description">
-                            Interfaz intuitiva para el registro y edición de productos, incluyendo categorías, 
-                            proveedores, precios y ubicaciones en la bodega.
+                        Formulario único para registrar tanto entradas como salidas de productos. El usuario selecciona el tipo de movimiento, el producto, la cantidad y la fecha.
                         </p>
                     </div>
                 </div>
                 <div class="screenshot-card">
                     <div class="screenshot-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=220&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3" alt="Sistema de Reportes" class="screenshot-main-image">
+                        <img src="img/4.png" alt="Sistema de Reportes" class="screenshot-main-image">
                     </div>
                     <div class="screenshot-info">
-                        <h3 class="screenshot-title">Sistema de Reportes</h3>
+                        <h3 class="screenshot-title">Historial de Movimientos</h3>
                         <p class="screenshot-description">
-                            Generación de reportes detallados con gráficos y estadísticas sobre movimientos 
-                            de inventario, productos más vendidos y análisis de tendencias.
+                            Visualización de todos los movimientos registrados en el sistema, con detalles de fecha, cantidad, tipo (entrada o salida) y usuario responsable.
                         </p>
                     </div>
                 </div>
                 <div class="screenshot-card">
                     <div class="screenshot-image">
-                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=220&fit=crop&crop=center" alt="Registro de Movimientos" class="screenshot-main-image">
+                        <img src="img/6.png" alt="Panel de Configuración" class="screenshot-main-image">
                     </div>
                     <div class="screenshot-info">
-                        <h3 class="screenshot-title">Registro de Movimientos</h3>
+                        <h3 class="screenshot-title">Alerta de Stock Bajo</h3>
                         <p class="screenshot-description">
-                            Historial completo de entradas y salidas de productos con detalles de fechas, 
-                            cantidades y responsables de cada operación.
+                        El sistema envía una notificación visual cuando un producto alcanza un nivel de stock mínimo, facilitando una reposición oportuna.
                         </p>
                     </div>
                 </div>
                 <div class="screenshot-card">
                     <div class="screenshot-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=220&fit=crop&crop=center" alt="Panel de Configuración" class="screenshot-main-image">
+                        <img src="img/5.png" alt="Registro de Movimientos" class="screenshot-main-image">
                     </div>
                     <div class="screenshot-info">
-                        <h3 class="screenshot-title">Panel de Configuración</h3>
+                        <h3 class="screenshot-title">Vista en Supabase</h3>
                         <p class="screenshot-description">
-                            Configuración de parámetros del sistema, gestión de usuarios y personalización 
-                            de alertas y notificaciones automáticas.
+                            Pantalla que muestra los datos sincronizados directamente desde la base de datos en Supabase, permitiendo verificar en tiempo real la información almacenada.
                         </p>
                     </div>
                 </div>
@@ -192,7 +174,7 @@
         <div class="container">
             <h2 class="section-title">Equipo de Trabajo</h2>
             <p class="section-subtitle">
-                Conoce a los desarrolladores detrás de este proyecto
+                Conoce a los integrantes del Grupo 7
             </p>
             <div class="team-grid">
                 <div class="team-card">
@@ -201,31 +183,25 @@
                     </div>
                     <h3 class="team-name">Ariana Mia Canales De la Cruz</h3>
                     <p class="team-bio">
-                        Estudiante de [Carrera], especializado en desarrollo de bases de datos y 
-                        arquitectura de sistemas. Responsable del diseño de la base de datos y 
-                        la implementación del backend del sistema de gestión de inventario.
+                    Estudiante de Ingeniería de Sistemas con interés en el análisis de datos y el desarrollo de software. Participó en el modelado entidad-relación, la documentación del sistema y el diagrama UML. Le gusta aprender de forma autónoma y combinar creatividad con lógica.
                     </p>
                 </div>
                 <div class="team-card">
                     <div class="team-photo">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=130&h=130&fit=crop&crop=face" alt="Integrante 2" class="team-profile-image">
+                        <img src="img/integrante-2.jpg" alt="Integrante 2" class="team-profile-image">
                     </div>
-                    <h3 class="team-name">[Nombre del Integrante 2]</h3>
+                    <h3 class="team-name">Cristian Samir Gutierrez Navarro</h3>
                     <p class="team-bio">
-                        Estudiante de [Carrera], con experiencia en desarrollo frontend y diseño 
-                        de interfaces de usuario. Encargado del desarrollo de la interfaz web y 
-                        la experiencia de usuario del sistema.
+                    Estudiante de Ingeniería de Sistemas apasionado por la programación backend y las bases de datos. Se encargó de implementar el modelo relacional en PostgreSQL y desarrollar consultas SQL. Le interesa crear sistemas eficientes y seguros.
                     </p>
                 </div>
                 <div class="team-card">
                     <div class="team-photo">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=130&h=130&fit=crop&crop=face" alt="Integrante 3" class="team-profile-image">
+                        <img src="img/integrante-3.jpeg" alt="Integrante 3" class="team-profile-image">
                     </div>
-                    <h3 class="team-name">[Nombre del Integrante 3]</h3>
+                    <h3 class="team-name">Fernando Lamziel Garibay Huamani</h3>
                     <p class="team-bio">
-                        Estudiante de [Carrera], especializado en análisis de sistemas y gestión 
-                        de proyectos. Responsable de la documentación, pruebas del sistema y 
-                        coordinación general del proyecto.
+                    Estudiante de Ingeniería de Sistemas enfocado en desarrollo web y automatización. Colaboró en el diseño de la interfaz de presentación del sistema y en la normalización de datos. Le entusiasma aplicar la tecnología en proyectos prácticos.
                     </p>
                 </div>
             </div>
@@ -236,12 +212,13 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <h3>Proyecto Final</h3>
-                <p>Teoría y Diseño de Bases de Datos</p>
+                <p>Proyecto Final - Teoría y Diseño de Bases de Datos</p>
                 <p>Desarrollado con dedicación por nuestro equipo de trabajo</p>
                 <p>Para más información sobre este proyecto, no dudes en contactarnos.</p>
+                <p><a href="https://github.com/ariana0406/bodega-cielo" target="_blank">github.com/ariana0406/bodega-cielo</a></p>
+                <p><a href="https://github.com/ariana0406/bodega-cielo-web" target="_blank">github.com/ariana0406/bodega-cielo-web</a></p>
                 <div class="footer-year">
-                    <p>&copy; 2025 - Universidad Nacional "San Luis Gonzaga"</p>
+                    <p>&copy; 2025 - Universidad Nacional «San Luis Gonzaga»</p>
                 </div>
             </div>
         </div>
